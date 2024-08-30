@@ -8,12 +8,9 @@ window.addEventListener('load', function() {
 		appLists = document.getElementsByClassName("app-list"),
 		petRoot = 'img/pets/',
 		animations = [ // name, delay, spacing, frames
-			[ 'pigeon', 3, 0.2, [1, 2, 1] ],
-			[ 'maxwell', 0, 0.1, [1, 2, 3, 2] ],
-			[ 'chicken', 3, 0.1, [1, 2, 3, 2, 3, 2, 1] ],
-			[ 'cat', 0, 0.4, [1, 0, 2, 3, 2] ]
+			[ 'maxwell', 0, 0.1, [1, 2, 3, 2] ]
 		],
-		aName = pickRandom(animations),
+		aName = animations[0], // Directly select the 'maxwell' animation
 		anim = new Animation(petImg);
 
 	anim.setLooped(true);
